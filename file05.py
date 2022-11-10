@@ -7,14 +7,10 @@ def main(data:str):
         list: return answer
     """
     i=0
-    j=0
-    for a in f:
+    for a in data:
         if a.isdigit():
             i+=1
-        elif a.isalpha():
-            j+=1
-    return [i,j]
+    return [i,len(data)-i]
     
 # Read data from file
 f = open('txt_file/data05.txt').read()
-
